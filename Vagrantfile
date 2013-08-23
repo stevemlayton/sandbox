@@ -97,13 +97,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     chef.cookbooks_path = ["cookbooks"] 
     chef.add_recipe("chef-mongodb::10gen_repo")
     chef.add_recipe("chef-mongodb::default")
-  #   chef.add_recipe "10gen_repo.rb"
-  #   chef.add_recipe "configserver.rb"
-
-  #   chef.run_list = [
-  #       "recipe[mongodb::10gen_repo]"
-  #   ]
-  # end
   end
 
   # Enable provisioning with chef server, specifying the chef server URL,
